@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/general.css">
+    <link rel="stylesheet" href="src/header.css">
+    <link rel="stylesheet" href="src/nav.css">
+    <link rel="stylesheet" href="src/main.css">
+    <link rel="stylesheet" href="src/advanced_search.css">
+    <link rel="stylesheet" href="src/footer.css">
+    <link rel="stylesheet" href="src/default.css">
+    <link rel="stylesheet" href="src/responsive.css">
+
+    <title>Movie World</title>
+
+</head>
+
+<body>
+<div class="container">
+    <!-- header -->
+    <header>
+        <div class="header-links hidden-toggle"><a href="#"><i class="fas fa-bars"></i></a></div>
+        <div class="header-links"><a href="#"><i class="fas fa-play"></i>Online Cinema</a></div>
+        <div class="header-links"><a href="#"><i class="fas fa-tv"></i>Install on TV</a></div>
+        <div class="header-links hidden-search"><a href="#"><i class="fa fa-search"></i></a></div>
+        <div class="search">
+            <label>
+                <input type="text" placeholder="Movies, series, cartoons...">
+            </label>
+            <div class="search-buttons">
+                <button class="parametersSearchBtn"><i class="fas fa-sliders-h"></i></button>
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+             <div class="popup-search-hidden"> <!--popup-search -->
+                <label>
+                    <input type="text" placeholder="movie title">
+                </label>
+                <label>
+                    <input type="number" placeholder="year or interval">
+                </label>
+                <label>
+                    <input type="text" placeholder="country">
+                </label>
+                    <select class="search-genres">
+                        <option class="option-default">genre</option>
+                        <option>anime</option>
+                        <option>biography</option>
+                        <option>thriller</option>
+                        <option>western</option>
+                        <option>military</option>
+                        <option>detective</option>
+                        <option>child</option>
+                        <option>documentary</option>
+                        <option>drama</option>
+                        <option>history</option>
+                        <option>comedy</option>
+                        <option>short film</option>
+                        <option>crime</option>
+                        <option>melodrama</option>
+                        <option>adventures</option>
+                        <option>family</option>
+                        <option>sport</option>
+                        <option>thriller</option>
+                        <option>horrors</option>
+                        <option>fiction</option>
+                        <option>fantasy</option>
+                      </select>
+                <label>
+                    <input type="text" placeholder="actors (separated by commas)">
+                </label>
+                <button class="popup-search-btn">Search</button>
+            </div>
+
+        </div>
+        <div class="header-sign-buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="sign-up">Sign up</button>
+        </div>
+        <!-- modal windows -->
+        <div class="modal__sign-in hidden">
+            <button class="close__sign-in">&times;</button>
+            <form class="box">
+              <h1>Вход</h1>
+              <input type="text" placeholder="Введите телефон или email">
+              <span class="field-validation-valid"></span>
+              <input type="password" placeholder="Введите пароль">
+              <button>Sign In</button>
+          </form>
+          </div>
+      
+          <div class="modal__sign-up hidden">
+            <button class="close__sign-up">&times;</button>
+            <form class="box">
+              <h1> Регистрация </h1>
+              <input type="text" placeholder="Введите телефон или email">
+              <input type="text" placeholder="Введите имя пользователя">
+              <input type="password" placeholder="Введите пароль">
+              <input type="password" placeholder="Повторите пароль">
+              <button>Sign Up</button>
+          </form>
+          </div>
+        <!-- /modal windows -->
+
+    </header>
+    <!-- /header -->
+    <!-- nav -->
+    <nav>
+        <div class="logo"></div>
+        <ul>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="far fa-user"></i></span>
+                <span class="title">My account</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="far fa-question-circle"></i></span>
+                <span class="title">What to watch?</span>
+            </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-theater-masks"></i></span>
+                <span class="title">Poster</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-exclamation"></i></span>
+                <span class="title">NEW!</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-folder-open"></i></span>
+                <span class="title">Media HD</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-film"></i></span>
+                <span class="title">Series</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-film"></i></span>
+                <span class="title">Movies</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-film"></i></span>
+                <span class="title">Cartoons</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-video"></i></span>
+                <span class="title">Short films</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="far fa-newspaper"></i></span>
+                <span class="title">News</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                <span class="icon"><i class="fas fa-users"></i></span>
+                <span class="title">Actors</span>
+                </a>
+            </li>
+        </ul>
+    </nav> 
+    <!-- /nav -->
+    <!-- main -->
+    <main>
+        <h4>Watch the latest news online!</h4>
+        <div class="slider">
+            <ul class="slider-list">
+              <li class="slider-element">
+                  <img src="img/slider_img/rick_and_morty.jpg" alt="0">
+                  <div class="description"><a href="#">RICK AND MORTY (5 SEASON)</a><p>Watch the legendaryRick and Morty Season 5! An animated series on adult-swim about the infinite adventures of Rick, a genius alcoholic and careless scientist, with his grandson Morty, a 14 year-old anxious boy who is not so smart. Together, they explore the infinite universes; causing mayhem  and running into trouble.</p>
+                  </div>
+                </li>
+            
+              <li class="slider-element">
+                  <img src="img/slider_img/justice_league.jpeg" alt="1">
+                    <div class="description"><a href="#">ZACK SNYDER'S JUSTICE LEAGUE</a><p>Bruce Wayne and   Diana Prince try to bring the metahumans of Earth together after the death of Clark Kent. Meanwhile, Darkseid sends Steppenwolf to Earth with a vast army to subjugate humans.</p></div>
+                </li>
+            
+              <li class="slider-element">
+                  <img src="img/slider_img/mortal_kombat.png" alt="2">
+                  <div class="description"><a href="#">MORTAL KOMBAT (2021)</a><p>Hunted by the fearsome warrior  Sub-Zero, MMA fighter Cole Young finds sanctuary at the temple of Lord Raiden. Training with experienced fighters Liu Kang, Kung Lao and the rogue mercenary Kano, Cole prepares to standwith Earth's greatest champions to take on the enemies from Outworld in a high-stakes battle   for the universe.</p></div></li>
+            
+              <li class="slider-element">
+                <img src="img/slider_img/raya.png" alt="3">
+                <div class="description"><a href="#">RAYA AND THE LAST DRAGON</a><p>Raya, a warrior, sets out to  track down Sisu, a dragon, who transferred all her powers into a magical gem which is nowscattered all over the kingdom of Kumandra, dividing its people.</p></div></li>
+            
+              <li class="slider-element">
+                  <img src="img/slider_img/cruella.jpg" alt="4">
+                <div class="description"><a href="#">CRUELLA</a><p>Estella is a young and clever grifter who'sdetermined to make a name for herself in the fashion world. She soon meets a pair of thieves who   appreciate her appetite for mischief, and together they build a life for themselves on thestreets of London. </p></div></li>
+            
+              <li class="slider-element">
+                  <img src="img/slider_img/nation_z.jpg" alt="5">
+                <div class="description"><a href="#">Z NATION</a><p>Several years since a zombie virus swept  across America, there's only one person -- who goes by just Murphy -- known to have survived the infection -- the world's last hope at creating a vaccine.</p></div></li>
+            </ul>
+            <div class="slider-arrow-left"><i class="fas fa-chevron-left"></i></div>
+            <div class="slider-arrow-right"><i class="fas fa-chevron-right"></i></div>
+            <div class="slider-dots"></div> 
+        </div>
+        <h4>Choose genre!</h4>
+        <div class="genres">
+            <div class="genre genre-drama"><div class="genre-name"><a href="">Drama</a></div></div>
+            <div class="genre genre-action"><div class="genre-name"><a href="#">Action</a></div></div>
+            <div class="genre genre-comedy"><div class="genre-name"><a href="#">Comedy</a></div></div>
+            <div class="genre genre-sci_fi"><div class="genre-name"><a href="#">Science fiction</a></div></div>
+            <div class="genre genre-documentary"><div class="genre-name"><a href="#">Documentary</a></div></div>
+            <div class="genre genre-thriller"><div class="genre-name"><a href="#">Thriller </a></div></div>
+            <div class="genre genre-adventure"><div class="genre-name"><a href="#">Adventure</a></div></div>
+            <div class="genre open-more"><div class="genre-name"><a href="#">More genres...</a></div></div>
+        </div>
+    <!-- table -->
+        <h4>Top list from Movie World</h4>
+        <table class="table-top">
+        <thead>
+            <tr class="headlines">
+              <th class="th-movies">Movies</th>
+              <th class="th-series">Series</th>
+              <th class="th-cartoons">Cartoons</th>
+              <th class="th-top">TOP</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td><a href="#">The Hunger Games (2012)</a></td>
+              <td><a href="#">Queen's Gambit</a></td>
+              <td><a href="#">Rick and Morty</a></td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td><a href="#">Titanic (1997)</a></td>
+              <td><a href="#">Breaking Bad</a></td>
+              <td><a href="#">The Simpsons</a></td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><a href="#">The Perks of Being a Wallflower (2012)</a></td>
+              <td><a href="#">The Vampire Diaries</a></td>
+              <td><a href="#">South Park</a></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><a href="#">Interstellar (2014)</a></td>
+              <td><a href="#">Shameless</a></td>
+              <td><a href="#">Final Space</a></td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td><a href="#">Eternal Sunshine of the Spotless Mind (2004)</a></td>
+              <td><a href="#">Love, Death & Robots</a></td>
+              <td><a href="#">Infinity Train</a></td>
+              <td>5</td>
+            </tr>
+        </tbody>
+        </table>
+          <div class="paginator">
+            <ul>
+                <li class="active">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+          </div>
+
+            <h4>Subscribe to watch more!</h4>
+            <div class="subscriptions">
+                <div class="subscription">
+                    <div class="sub-image image-lite"></div>
+                    <h3>Lite</h3>
+                    <p class="sub-description">Movies and TV shows for every day</p>
+                    <button>Choose</button>
+                    <p class="sub-price">2.68 $ / month</p>
+                </div>
+                <div class="subscription">
+                    <div class="sub-image image-optimum"></div>
+                    <h3>Optimum</h3>
+                    <p class="sub-description">Light + exclusives and all for children</p>
+                    <button>Choose</button>
+                    <p class="sub-price">5.37 $ / month</p>
+                </div>
+                <div class="subscription">
+                    <div class="sub-image image-premium"></div>
+                    <h3>Premium</h3>
+                    <p class="sub-description">Optimum + Start series and movies</p>
+                    <button>Choose</button>
+                    <p class="sub-price">10.75 $ / month</p>
+                </div>
+            </div>
+  </main>
+    <!-- /main -->
+  <footer>
+    <div class="footer-icons">
+        <ul>
+            <li><a href="#"><i class="fab fa-vk"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-information">
+    <div class="footer-name_site"><a href="#">Movie World</a></div>
+    <div class="about-us">
+        <ul>
+            <li><a href="#">The main</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+    <div class="feedback">
+        <p>Feedback:</p>
+        <a href="#">si_kinski@mail.ru</a>
+    </div>
+  </div>
+  </footer>
+</div>
+<div class="overlay hidden"></div>
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/3dea964375.js" crossorigin="anonymous"></script>
+
+    <script src="slider.js"></script>
+    <script src="table_pagination.js"></script>
+    <script src="modal_windows.js"></script>
+</body>
+</html>

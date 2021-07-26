@@ -1,0 +1,50 @@
+nav {
+    position: absolute;
+    width: 200px;
+    height: calc(100% - 180px);
+    overflow: hidden;
+    margin-top: -50px;
+    color: white;
+    font-size: 14px;
+}
+.logo {
+    width: 120px;
+    height: 60px;
+    margin: 20px auto;
+    background: url(img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+nav ul {
+    width: 100%;
+}
+nav ul li {
+    width: 100%;
+    font-size: 16px;
+}
+nav ul li:hover {
+    background: rgb(41, 41, 41);
+    transition: 0.5s;
+}
+nav ul li a {
+    display: flex;
+    width: 100%;
+}
+nav ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+nav ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+}
+.icon {
+    color: #ffa421;
+}

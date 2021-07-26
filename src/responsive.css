@@ -1,0 +1,197 @@
+.container {
+    max-width: 1200px;
+}
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .slider {
+        height: 390px;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .subscription {
+        width: 29%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .genre {
+        width: 45%;
+    }
+    .subscription {
+        width: 30%;
+    }
+    main {
+        margin-left: 210px;
+    }
+    .slider {
+        height: 360px;
+    }
+}
+@media only screen and (max-width: 1030px) {
+    header {
+        justify-content: space-around;
+        transition: 0.8s;
+
+    }
+    .header-links {
+        width: 30px;
+        height: 20px;
+        padding: 0;
+        overflow: hidden;
+        margin-top: 5px;
+    }
+    .header-sign-buttons {
+        width: 200px;
+        transition: 0.8s;
+    }
+    .search {
+        width: 300px;
+        transition: 0.8s;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .slider {
+        height: 310px;
+    }
+    .subscription {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    div.slider-arrow-left,
+    div.slider-arrow-right {
+        font-size: 20px;
+    }
+    
+}
+@media only screen and (max-width: 800px) {
+    .search {
+        display: none;
+    }
+    .hidden-search {
+        display: flex;
+    }
+    .slider {
+        height: 230px;
+    }
+    .slider-element .description p{
+        display: none;
+    }
+    .slider-element .description a {
+        font-size: 20px;
+    }
+    .description {
+        margin-top: -50px;
+    }
+    .genre-name a {
+        font-size: 20px;
+    }
+    .subscription {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 740px) {
+    .slider {
+        height: 210px;
+    }
+    main h4 {
+        font-size: 30px;
+    }
+    
+}
+@media only screen and (max-width: 650px) {
+    .slider {
+        height: 160px;
+    }
+    .description a {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    .genre {
+        width: 40%;
+    }
+    .subscription {
+        width: 90%;
+    }
+    header {
+        margin-left: 0px;
+    }
+    main {
+        margin-left: 0px;
+    }
+    .hidden-toggle {
+        display: flex;
+    }
+    .slider {
+        height: 230px;
+    }
+    .subscription {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .slider {
+        height: 190px;
+    }
+    .subscription h3 {
+        font-size: 20px;
+        }
+    .sub-description {
+    font-size: 14px;
+    }
+    .paginator ul li {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .slider {
+        height: 170px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .header-sign-buttons {
+        display: none;
+    }
+    .hidden-toggle {
+        margin-right: 50px;
+    }
+     .slider {
+        height: 150px;
+    }
+    div.slider-arrow-left,
+    div.slider-arrow-right {
+        font-size: 15px;
+    }
+    div.slider-arrow-right {
+        right: 16px;
+      }
+      div.slider-arrow-left {
+        left: 15px;
+      }
+    main h4 {
+        font-size: 20px;
+    }
+    .genre-name a {
+        font-size: 15px;
+    }
+    .table-top {
+        font-size: 11px;
+    }
+    .table-top td, .table-top td a{
+        font-size: 9px;
+    }
+    .subscription {
+        width: 80%;
+    }
+    
+}

@@ -1,0 +1,277 @@
+main {
+    margin-left: 200px;
+    padding: 30px 0;
+    text-align: center;
+} 
+main h4, h3 {
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    font-family: 'PyperFonts';
+    font: 'Oswald-Regular';
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+/* slider */
+
+.slider {
+    position: relative;
+    margin: 0 auto;
+    width: 95%;
+    height: 450px;
+    padding: 0 50px;
+}
+.slider-element img {
+    width: 100%; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.slider-list {
+    position: relative;
+    text-align: center;
+}
+.slider-element {
+    width: 100%;
+    transition: opacity 1s ease-in;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    display: block;
+    align-items: center;
+}
+  
+  /* Navigation item styles */
+  div.slider-arrow-left,
+  div.slider-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 4;
+    top: 40%;
+    display: block;
+    font-size: 30px;
+    color: white;
+  }
+
+div.slider-arrow-right {
+  right: 10px;
+}
+div.slider-arrow-left {
+  left: 10px;
+}
+
+div.slider-arrow-left:hover, div.slider-arrow-right:hover {
+  opacity: 1.0;
+}
+
+div.slider-dots {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  text-align: center;
+}
+span.dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #BBB;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.slider-element .description a {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 30px;
+      margin: 10px;
+}
+.slider-element .description p  {
+    color: white;
+}
+.description {
+    margin-top: -100px;
+    background-color:rgb(31,31,31);
+    opacity: 0.8;
+    box-shadow: 0px 10px 5px rgb(31,31,31), 0px -10px 5px rgb(31,31,31);
+}
+/* /slider */
+
+.genres , .subscriptions {
+    text-align: center;
+}
+.genres {
+    width: 100%;
+}
+
+.genre {
+    width: 23%;
+    height: 20%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.genres .genre:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.genres .genre {
+    margin: 5px;
+    padding: 5% 0;
+    background-size: cover;
+    opacity: 0.9;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.genre-drama {
+    background: url(img/drama_genre.png);
+}
+.genre-action {
+    background: url(img/action_genre.png);
+}
+.genre-comedy {
+    background: url(img/comedy_genre.png);
+} 
+.genre-sci_fi {
+    background: url(img/sci-fi_genre.png);
+}
+.genre-documentary {
+    background: url(img/documentary_genre.png);
+}
+.genre-thriller {
+    background: url(img/thriller_genre.png);
+}
+.genre-adventure {
+    background: url(img/adventage_genre.png);
+}
+.open-more {
+    background: url(img/open-more_genre.png)
+}
+.genre a {
+    color: rgb(255, 255, 255);
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+    font-size: 28px;
+    text-decoration: none;
+}
+.genre-name {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* table */
+.table-top, .table-top th, .table-top td {
+    border: 1px solid black;
+  }
+.table-top {
+      width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+      border-spacing: 0;
+      background: rgb(5, 5, 5);
+      color: white;
+      padding: 10px;
+  }
+  .th-movies {
+      width: 30%;
+  }
+ .th-series {
+      width: 30%;
+  }
+  .th-cartoons {
+      width: 30%;
+  }
+  .th-top {
+      width: 10%;
+  }
+ .table-top th, .table-top td{
+      padding: 10px;
+  }
+  .active {
+      color:#ffa421;
+  }
+  /* .headlines th {
+    color: #ffa421;
+  } */
+  .paginator ul li {
+      display: inline-block;
+      font-size: 25px;
+      cursor: pointer;
+      padding: 6px;
+  }
+  .headlines {
+    background: #ffa421;
+
+      color: black;
+      cursor:default;
+  }
+  td a {
+      color: white;
+      text-decoration: none;
+  }
+
+/* subscription */
+.subscription {
+    width: 32%;
+    height: 400px;
+    background: linear-gradient(0deg, rgba(89,89,89,1) 0%, rgba(0,0,0,1) 100%);
+    display: inline-block;
+    margin-right: 5px;
+    margin: 20px 5px;
+    color:white;
+}
+.subscription:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.sub-image {
+    width: 95%;
+    height: 46%;
+    margin: 8px auto;
+    box-shadow: inset 0px 0px 40px 20px #2c2c2c;
+}
+.image-lite {
+    background: url(img/sub_background-1.jpg);
+    background-size: contain;
+
+}
+.image-optimum {
+    background: url(img/sub_background-2.jpg);
+    background-size: contain;
+
+}
+.image-premium {
+    background: url(img/sub_background-3.jpg);
+    background-size: contain;
+}
+.subscription h3 {
+    display: block;
+    margin: 15px auto;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.sub-description {
+    font-size: 17px;
+}
+.subscription button {
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    background:#ffa421;
+    border-radius: 2px;
+    margin: 13px auto;
+}
+.subscription button:hover {
+    background:#eb9010;
+
+}
+.subscription button:active, .subscription button:focus { 
+    outline: none; 
+}

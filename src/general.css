@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, button {
+    font-family: "PyperFonts";
+    font: 'Oswald-ExtraLight';
+    letter-spacing: 1.5px;
+    font-size: 14px;
+}  
+p {
+    font-family: "PyperFonts";
+    font: 'Oswald-RegularItalic';
+}
+@font-face {
+    font-family: "PyperFonts";
+    src: url("fonts/Oswald-Regular.ttf"), 
+         url("fonts/Oswald-ExtraLight.ttf"),
+         url("fonts/Oswald-RegularItalic.ttf");
+
+} 
+body {
+    background: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    position: relative;
+    background: rgb(20, 20, 20);
+
+
+    height: 100%;
+    margin: 0 auto;
+}
+header, nav, footer {
+    background: rgb(31,31,31);
+}
+main {
+    background: rgb(20, 20, 20);
+}
+/* hover color orange */
+.search-buttons button:hover, 
+.genres .genre a:hover, 
+td a:hover, 
+.paginator ul li:hover, 
+.footer-icons li a:hover,
+.about-us li a:hover, 
+.feedback a:hover  {
+    color: #ffa421;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    background: rgba(0,0,0,0.5);
+}
+.hidden {
+    display: none;
+}  
+  
